@@ -1,0 +1,75 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    margin: 0;
+}
+
+.game-container {
+    background: rgba(255,255,255,0.95);
+    padding: 30px 50px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 500px;
+}
+
+#emoji-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-gap: 15px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.emoji-item {
+    font-size: 40px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.emoji-item:hover {
+    transform: scale(1.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+#result {
+    font-size: 20px;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+#next-btn {
+    padding: 10px 25px;
+    font-size: 16px;
+    border: none;
+    background: #ff758c;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#next-btn:hover {
+    background: #ff4e6a;
+}
+
+/* Certificate */
+#certificate {
+    margin-top: 20px;
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    padding: 20px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}

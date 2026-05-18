@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech Crossword Quest</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div id="game-container">
+
+  <!-- PREVIOUS ARROW -->
+  <div id="prev-arrow">←</div>
+
+  <!-- TIMER -->
+  <div id="top-timer">⏱ Time: 00:00</div>
+
+  <!-- HEADER -->
+  <div class="header">
+    <span class="title-letter t-1">T</span>
+    <span class="title-letter t-2">E</span>
+    <span class="title-letter t-3">C</span>
+    <span class="title-letter t-4">H</span>
+  </div>
+
+  <!-- CLUES -->
+  <div class="panel">
+    <h3>CLUES</h3>
+    <ul id="clues-list"></ul>
+    <div>Hints Left: <span id="hint-count">3</span></div>
+  </div>
+
+  <!-- GRID -->
+  <div class="grid" id="crossword-grid"></div>
+
+  <!-- SCORE -->
+  <div class="panel">
+    <div class="score-box">
+      <h3>Well Done!</h3>
+      <div id="score-val">SCORE: 0</div>
+    </div>
+    <p id="fun-fact">Answer a word to see fun fact!</p>
+    <button class="btn btn-hint" id="hint-btn">Hint</button>
+  </div>
+
+  <!-- NEXT LEVEL -->
+  <div id="next-level-container" style="display:none;">
+    <button class="btn" id="next-level-btn">Next Level →</button>
+  </div>
+  <a href="../index.html" style="display:block; margin-top:20px; text-align:center;">⬅ Back to Home</a>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini Games Hub</title>
+
+<!-- OLD CSS (unchanged) -->
+<link rel="stylesheet" href="style.css">
+
+<!-- HUB CSS -->
+<link rel="stylesheet" href="hub.css">
+</head>
+
+<body>
+
+ <audio id="hoverSound" src="music/hover.mp3.mp4"></audio>
+
+<div class="container">
+
+  <h1>🎮 IQ Checking Games</h1>
+  <p>Select a game to play</p>
+
+  <div class="games">
+
+    <!-- GAME 1 (UNLOCKED) -->
+    <a href="word puzzle/one.html" 
+       class="game-card"
+       id="game1"
+       data-sound>
+      <h2>🧩 Tech Crossword</h2>
+      <p>Clues, grid & fun facts</p>
+    </a>
+
+    <!-- GAME 2 (LOCKED INITIALLY) -->
+    <a href="grid puzzle game/two.html"
+       class="game-card locked"
+       id="game2"
+       data-sound>
+      <h2>⚡ Zip Word Challenge</h2>
+      <p>LinkedIn-style quick quiz</p>
+    </a>
+
+    <!-- GAME 3 (LOCKED INITIALLY) -->
+    <a href="color pattern game/three.html"
+       class="game-card locked"
+       id="game3"
+       data-sound>
+      <h2>🧩 Color Pattern Challenge</h2>
+      <p>Clues, colors & fun facts</p>
+    </a>
+
+    <!-- GAME 4 (LOCKED INITIALLY) -->
+    <a href="odd 1 out game/four.html"
+       class="game-card locked"
+       id="game4"
+       data-sound>
+      <h2>🧩 Odd One Out Game</h2>
+      <p>Find the different item</p>
+    </a>
+
+  </div>
+
+  <!-- HOVER SOUND -->
+  <audio id="hoverSound" src="music/hover.mp3.mp4" preload="auto"></audio>
+
+</div>
+
+<!-- HUB JS -->
+<script src="hub.js" defer></script>
+
+</body>
+</html>

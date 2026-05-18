@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zip Game – Mixed Quiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+
+<div class="app">
+
+  <section id="start" class="screen active">
+    <h1>Zip Game</h1>
+    <p>Find your IQ level fast</p>
+    <button id="startBtn">Play</button>
+  </section>
+
+  <section id="game" class="screen">
+    <header class="top">
+      <span>⏱ <b id="time">60</b></span>
+      <span>⭐ <b id="score">0</b></span>
+    </header>
+
+    <div class="current">
+      Question
+      <strong id="currentWord"></strong>
+    </div>
+
+    <div id="grid"></div>
+  </section>
+
+  <section id="result" class="screen">
+    <h2>Game Over 🎉</h2>
+    <p>Score: <b id="finalScore"></b></p>
+    <p>Accuracy: <b id="accuracy"></b>%</p>
+    <button id="playAgain">Play Again</button>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

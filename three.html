@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IQ Color Pattern Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+  <h1>🧠 IQ Color Pattern Game</h1>
+
+  <p class="level">Level: <span id="level">1</span> / 10</p>
+  <p class="timer">Time: <span id="timer">15</span>s</p>
+
+  <div id="pattern" class="pattern-box"></div>
+
+  <p class="question">What is the next color?</p>
+
+  <div class="options">
+    <button onclick="checkAnswer('pink')">Pink</button>
+    <button onclick="checkAnswer('blue')">Blue</button>
+    <button onclick="checkAnswer('yellow')">Yellow</button>
+    <button onclick="checkAnswer('red')">Red</button>
+    <button onclick="checkAnswer('green')">Green</button>
+    <button onclick="checkAnswer('crimson')">Crimson</button>
+  </div>
+
+  <p id="result"></p>
+  <p class="score">Score: <span id="score">0</span></p>
+  <button class="next-btn" onclick="nextQuestion()">Next Level</button>
+</div>
+
+<!-- Certificate popup -->
+<div id="certificate" class="certificate">
+  <div class="certificate-content">
+    <div class="trophy">🏆</div>
+    <h2>Congratulations!</h2>
+    <p>You completed the IQ Game</p>
+    <p>Score: <span id="final-score">0</span> / 100</p>
+    <button onclick="closeCertificate()">Close</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
